@@ -48,12 +48,12 @@ export default function PersonalTrainerPage() {
                         description="Elevate your fitness journey under the expert guidance of Arsalan. With a singular focus on your results, we build elite-level athleticism through data-driven training and disciplined habit formation."
                         background={{ variant: "rotated-rays-static-grid" }}
                         carouselItems={[
-                            { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-coach-helping-girl_23-2150363711.jpg?w=800&h=600&_wi=1" },
-                            { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-woman-helping-fit-man-gym_23-2149740141.jpg?w=800&h=600&_wi=1" },
-                            { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/crossfit-exercise-performed-by-strong-woman-with-rope_1098-18892.jpg?w=800&h=600&_wi=1" },
-                            { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/front-view-women-with-delicious-food_23-2149894894.jpg?w=800&h=600&_wi=1" },
-                            { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/handsome-athletic-male-blue-sportswear-holds-dumbbell-dark-vignette-background_613910-1364.jpg?w=400&h=400&_wi=1" },
-                            { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/serious-sportswoman-with-crossed-arms_1153-942.jpg?w=400&h=400" }
+                            { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/handsome-athletic-male-blue-sportswear-holds-dumbbell-dark-vignette-background_613910-1364.jpg?w=800&h=600&_wi=1" },
+                            { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/fit-man-doing-gymnastics-rings-exercise-gym_23-2148405088.jpg?w=800&h=600&_wi=1" },
+                            { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/man-doing-pull-ups-gym_23-2149171221.jpg?w=800&h=600&_wi=1" },
+                            { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/muscular-man-lifting-heavy-weights-gym_23-2148784846.jpg?w=800&h=600&_wi=1" },
+                            { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/athlete-training-hard-gym_23-2149182377.jpg?w=800&h=600&_wi=1" },
+                            { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/strong-male-athlete-posing_23-2148777098.jpg?w=800&h=600&_wi=1" }
                         ]}
                         buttons={[
                             { text: "Start Training", href: "#contact" },
@@ -70,7 +70,7 @@ export default function PersonalTrainerPage() {
                             { title: "Expert Guidance", description: "Direct mentorship", icon: Award },
                             { title: "Data-Driven", description: "Tracked progress", icon: TrendingUp }
                         ]}
-                        imageSrc="http://img.b2bpic.net/free-photo/medium-shot-coach-helping-girl_23-2150363711.jpg?w=800&h=600&_wi=2"
+                        imageSrc="http://img.b2bpic.net/free-photo/handsome-athletic-male-blue-sportswear-holds-dumbbell-dark-vignette-background_613910-1364.jpg?w=800&h=600&_wi=2"
                         textboxLayout="split"
                         useInvertedBackground={false}
                     />
@@ -81,7 +81,7 @@ export default function PersonalTrainerPage() {
                         title="Success Metrics"
                         description="A legacy of excellence built through individual dedication."
                         metrics={[
-                            { id: "1", icon: Trophy, title: "Successful Clients", value: "500+" },
+                            { id: "1", icon: Trophy, title: "Successful Athletes", value: "500+" },
                             { id: "2", icon: Zap, title: "Lead Coach", value: "1" },
                             { id: "3", icon: Star, title: "Goal Clarity", value: "100%" }
                         ]}
@@ -99,9 +99,9 @@ export default function PersonalTrainerPage() {
                         useInvertedBackground={false}
                         textboxLayout="default"
                         features={[
-                            { id: "1", title: "1-on-1 Elite Coaching", author: "Arsalan", description: "Direct mentorship focused on technique and progress.", tags: ["1-on-1", "Elite"], imageSrc: "http://img.b2bpic.net/free-photo/high-angle-woman-helping-fit-man-gym_23-2149740141.jpg?w=800&h=600&_wi=2" },
-                            { id: "2", title: "Elite Conditioning", author: "Arsalan", description: "High-intensity programming for output and recovery.", tags: ["Conditioning", "Endurance"], imageSrc: "http://img.b2bpic.net/free-photo/crossfit-exercise-performed-by-strong-woman-with-rope_1098-18892.jpg?w=800&h=600&_wi=2" },
-                            { id: "3", title: "Performance Nutrition", author: "Arsalan", description: "Evidence-based macro and micro-nutrient planning.", tags: ["Nutrition", "Performance"], imageSrc: "http://img.b2bpic.net/free-photo/front-view-women-with-delicious-food_23-2149894894.jpg?w=800&h=600&_wi=2" }
+                            { id: "1", title: "1-on-1 Elite Coaching", author: "Arsalan", description: "Direct mentorship focused on technique and progress.", tags: ["1-on-1", "Elite"], imageSrc: "http://img.b2bpic.net/free-photo/fit-man-doing-gymnastics-rings-exercise-gym_23-2148405088.jpg?w=800&h=600&_wi=2" },
+                            { id: "2", title: "Elite Conditioning", author: "Arsalan", description: "High-intensity programming for output and recovery.", tags: ["Conditioning", "Endurance"], imageSrc: "http://img.b2bpic.net/free-photo/man-doing-pull-ups-gym_23-2149171221.jpg?w=800&h=600&_wi=2" },
+                            { id: "3", title: "Performance Nutrition", author: "Arsalan", description: "Evidence-based macro and micro-nutrient planning.", tags: ["Nutrition", "Performance"], imageSrc: "http://img.b2bpic.net/free-photo/muscular-man-lifting-heavy-weights-gym_23-2148784846.jpg?w=800&h=600&_wi=2" }
                         ]}
                     />
                 </div>
@@ -131,7 +131,7 @@ export default function PersonalTrainerPage() {
                         textboxLayout="default"
                         useInvertedBackground={false}
                         testimonials={[
-                            { id: "1", name: "Elite Client", handle: "@client1", testimonial: "Arsalan builds athletes, not just lifters. His attention is unmatched.", imageSrc: "http://img.b2bpic.net/free-photo/handsome-athletic-male-blue-sportswear-holds-dumbbell-dark-vignette-background_613910-1364.jpg?w=400&h=400&_wi=2" }
+                            { id: "1", name: "Elite Athlete", handle: "@proathlete", testimonial: "Arsalan builds athletes, not just lifters. His attention is unmatched.", imageSrc: "http://img.b2bpic.net/free-photo/strong-male-athlete-posing_23-2148777098.jpg?w=400&h=400&_wi=2" }
                         ]}
                     />
                 </div>
