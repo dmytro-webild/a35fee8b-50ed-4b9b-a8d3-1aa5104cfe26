@@ -11,7 +11,7 @@ import FeatureBento from "@/components/sections/feature/FeatureBento";
 import TestimonialCardSix from "@/components/sections/testimonial/TestimonialCardSix";
 import ContactCenter from "@/components/sections/contact/ContactCenter";
 import FooterMedia from "@/components/sections/footer/FooterMedia";
-import { Award, TrendingUp, Trophy, Zap, Star, Dumbbell, Heart, Lightbulb, Compass, Mail, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Award, TrendingUp, Trophy, Zap, Star, Dumbbell, Heart, Lightbulb } from "lucide-react";
 
 export default function PersonalTrainerPage() {
     return (
@@ -72,6 +72,7 @@ export default function PersonalTrainerPage() {
                         ]}
                         imageSrc="http://img.b2bpic.net/free-photo/medium-shot-coach-helping-girl_23-2150363711.jpg?w=800&h=600"
                         textboxLayout="split"
+                        useInvertedBackground={false}
                     />
                 </div>
 
@@ -86,6 +87,7 @@ export default function PersonalTrainerPage() {
                         ]}
                         animationType="slide-up"
                         textboxLayout="default"
+                        useInvertedBackground={false}
                     />
                 </div>
 
@@ -127,6 +129,7 @@ export default function PersonalTrainerPage() {
                         description="Hear from those who transformed their lives."
                         animationType="slide-up"
                         textboxLayout="default"
+                        useInvertedBackground={false}
                         testimonials={[
                             { id: "1", name: "Elite Client", handle: "@client1", testimonial: "Arsalan builds athletes, not just lifters. His attention is unmatched.", imageSrc: "http://img.b2bpic.net/free-photo/handsome-athletic-male-blue-sportswear-holds-dumbbell-dark-vignette-background_613910-1364.jpg?w=400&h=400" }
                         ]}
@@ -138,6 +141,8 @@ export default function PersonalTrainerPage() {
                         tag="Train with Arsalan"
                         title="Join the 500+ Club"
                         description="Limited training spots available. Secure your place for personalized elite-level coaching today."
+                        background={{ variant: "sparkles-gradient" }}
+                        useInvertedBackground={false}
                     />
                 </div>
 
