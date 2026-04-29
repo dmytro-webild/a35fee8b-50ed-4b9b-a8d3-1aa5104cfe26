@@ -3,14 +3,14 @@
 import ReactLenis from "lenis/react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleFullscreen from "@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen";
-import HeroSplitKpi from "@/components/sections/hero/HeroSplitKpi";
-import TextAbout from "@/components/sections/about/TextAbout";
-import MetricCardOne from "@/components/sections/metrics/MetricCardOne";
-import FeatureCardSeven from "@/components/sections/feature/FeatureCardSeven";
+import HeroBillboardRotatedCarousel from "@/components/sections/hero/HeroBillboardRotatedCarousel";
+import SplitAbout from "@/components/sections/about/SplitAbout";
+import MetricCardThree from "@/components/sections/metrics/MetricCardThree";
+import FeatureCardTwentyFour from "@/components/sections/feature/FeatureCardTwentyFour";
 import FeatureBento from "@/components/sections/feature/FeatureBento";
-import TestimonialCardFifteen from "@/components/sections/testimonial/TestimonialCardFifteen";
-import ContactSplit from "@/components/sections/contact/ContactSplit";
-import FooterCard from "@/components/sections/footer/FooterCard";
+import TestimonialCardSix from "@/components/sections/testimonial/TestimonialCardSix";
+import ContactCenter from "@/components/sections/contact/ContactCenter";
+import FooterMedia from "@/components/sections/footer/FooterMedia";
 import { Award, TrendingUp, Trophy, Zap, Star, Dumbbell, Heart, Lightbulb, Compass, Mail, Instagram, Twitter, Linkedin } from "lucide-react";
 
 export default function PersonalTrainerPage() {
@@ -43,80 +43,63 @@ export default function PersonalTrainerPage() {
                 </div>
 
                 <div id="hero" data-section="hero">
-                    <HeroSplitKpi
+                    <HeroBillboardRotatedCarousel
                         title="Peak Performance with Arsalan"
                         description="Elevate your fitness journey under the expert guidance of Arsalan. With a singular focus on your results, we build elite-level athleticism through data-driven training and disciplined habit formation."
                         background={{ variant: "rotated-rays-static-grid" }}
-                        kpis={[
-                            { value: "500+", label: "Total Transformations" },
-                            { value: "1", label: "Elite Trainer" },
-                            { value: "100%", label: "Dedicated Professional" }
+                        carouselItems={[
+                            { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-coach-helping-girl_23-2150363711.jpg?w=800&h=600" },
+                            { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-woman-helping-fit-man-gym_23-2149740141.jpg?w=800&h=600" },
+                            { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/crossfit-exercise-performed-by-strong-woman-with-rope_1098-18892.jpg?w=800&h=600" },
+                            { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/front-view-women-with-delicious-food_23-2149894894.jpg?w=800&h=600" },
+                            { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/handsome-athletic-male-blue-sportswear-holds-dumbbell-dark-vignette-background_613910-1364.jpg?w=400&h=400" },
+                            { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/serious-sportswoman-with-crossed-arms_1153-942.jpg?w=400&h=400" }
                         ]}
-                        enableKpiAnimation={true}
-                        tag="Elite Fitness Coach"
-                        tagIcon={Award}
-                        imageSrc="http://img.b2bpic.net/free-photo/medium-shot-coach-helping-girl_23-2150363711.jpg?w=800&h=600"
-                        imageAlt="Professional Arsalan personal trainer session"
-                        imagePosition="right"
                         buttons={[
                             { text: "Start Training", href: "#contact" },
                             { text: "View Programs", href: "#services" }
                         ]}
-                        mediaAnimation="slide-up"
                     />
                 </div>
 
                 <div id="about" data-section="about">
-                    <TextAbout
-                        title="Arsalan's Philosophy: Training is a craft. I believe in a direct, one-on-one approach where every movement is intentional. No generic plans—just pure, tailored intensity designed to push your limits while ensuring longevity and sustainable growth. Let’s redefine your potential together."
-                        useInvertedBackground={false}
-                        buttons={[
-                            { text: "Meet Arsalan", href: "#achievements" },
-                            { text: "Read More", href: "#philosophy" }
+                    <SplitAbout
+                        title="Arsalan's Philosophy"
+                        description="Training is a craft. I believe in a direct, one-on-one approach where every movement is intentional. No generic plans—just pure, tailored intensity designed to push your limits while ensuring longevity and sustainable growth. Let’s redefine your potential together."
+                        bulletPoints={[
+                            { title: "Expert Guidance", description: "Direct mentorship", icon: Award },
+                            { title: "Data-Driven", description: "Tracked progress", icon: TrendingUp }
                         ]}
+                        imageSrc="http://img.b2bpic.net/free-photo/medium-shot-coach-helping-girl_23-2150363711.jpg?w=800&h=600"
+                        textboxLayout="split"
                     />
                 </div>
 
                 <div id="achievements" data-section="achievements">
-                    <MetricCardOne
-                        title="Proven Results, One Trainer"
-                        description="A legacy of excellence built through individual dedication"
-                        tag="Success Metrics"
-                        tagIcon={TrendingUp}
+                    <MetricCardThree
+                        title="Success Metrics"
+                        description="A legacy of excellence built through individual dedication."
                         metrics={[
-                            { id: "1", value: "500+", title: "Successful Clients", description: "Transformations achieved through personalized guidance", icon: Trophy },
-                            { id: "2", value: "1", title: "Lead Coach", description: "Direct, expert 1-on-1 oversight by Arsalan", icon: Zap },
-                            { id: "3", value: "100%", title: "Goal Clarity", description: "Precise, target-oriented athletic programming", icon: Star },
+                            { id: "1", icon: Trophy, title: "Successful Clients", value: "500+" },
+                            { id: "2", icon: Zap, title: "Lead Coach", value: "1" },
+                            { id: "3", icon: Star, title: "Goal Clarity", value: "100%" }
                         ]}
-                        gridVariant="uniform-all-items-equal"
                         animationType="slide-up"
                         textboxLayout="default"
-                        useInvertedBackground={false}
                     />
                 </div>
 
                 <div id="services" data-section="services">
-                    <FeatureCardSeven
+                    <FeatureCardTwentyFour
                         title="Bespoke Training Programs"
-                        description="Direct, expert-led training sessions optimized for your growth"
-                        tag="Service Offerings"
-                        tagIcon={Dumbbell}
-                        features={[
-                            {
-                                title: "1-on-1 Elite Coaching",                                description: "Direct mentorship from Arsalan. Focus on perfect technique, aggressive progress tracking, and constant adjustments to keep you hitting new PRs.",                                imageSrc: "http://img.b2bpic.net/free-photo/high-angle-woman-helping-fit-man-gym_23-2149740141.jpg?w=800&h=600",                                imageAlt: "1 on 1 coaching session"
-                            },
-                            {
-                                title: "Elite Conditioning",                                description: "High-intensity programming designed to maximize output, improve recovery cycles, and optimize your cardiovascular and muscular endurance.",                                imageSrc: "http://img.b2bpic.net/free-photo/crossfit-exercise-performed-by-strong-woman-with-rope_1098-18892.jpg?w=800&h=600",                                imageAlt: "Conditioning workout session"
-                            },
-                            {
-                                title: "Performance Nutrition",                                description: "Fuel your training with evidence-based macro and micro-nutrient planning designed specifically to complement your training phase.",                                imageSrc: "http://img.b2bpic.net/free-photo/front-view-women-with-delicious-food_23-2149894894.jpg?w=800&h=600",                                imageAlt: "Performance nutrition plan"
-                            }
-                        ]}
-                        textboxLayout="default"
+                        description="Direct, expert-led training sessions optimized for your growth."
                         animationType="slide-up"
                         useInvertedBackground={false}
-                        buttons={[
-                            { text: "Inquire for Training", href: "#contact" }
+                        textboxLayout="default"
+                        features={[
+                            { id: "1", title: "1-on-1 Elite Coaching", author: "Arsalan", description: "Direct mentorship focused on technique and progress.", tags: ["1-on-1", "Elite"], imageSrc: "http://img.b2bpic.net/free-photo/high-angle-woman-helping-fit-man-gym_23-2149740141.jpg?w=800&h=600" },
+                            { id: "2", title: "Elite Conditioning", author: "Arsalan", description: "High-intensity programming for output and recovery.", tags: ["Conditioning", "Endurance"], imageSrc: "http://img.b2bpic.net/free-photo/crossfit-exercise-performed-by-strong-woman-with-rope_1098-18892.jpg?w=800&h=600" },
+                            { id: "3", title: "Performance Nutrition", author: "Arsalan", description: "Evidence-based macro and micro-nutrient planning.", tags: ["Nutrition", "Performance"], imageSrc: "http://img.b2bpic.net/free-photo/front-view-women-with-delicious-food_23-2149894894.jpg?w=800&h=600" }
                         ]}
                     />
                 </div>
@@ -125,81 +108,48 @@ export default function PersonalTrainerPage() {
                     <FeatureBento
                         title="Methodology by Arsalan"
                         description="Efficiency, Intensity, and Precision"
-                        tag="The Arsalan Method"
-                        tagIcon={Compass}
-                        features={[
-                            {
-                                title: "Data-Driven Progress",                                description: "Every session logged, every rep counted. We analyze data to ensure linear progression.",                                bentoComponent: "animated-bar-chart"
-                            },
-                            {
-                                title: "Core Pillars",                                description: "Focus on Strength, Stability, and Endurance.",                                bentoComponent: "3d-stack-cards",                                items: [
-                                    { icon: Dumbbell, title: "Strength", subtitle: "Raw Power", detail: "Compound mechanical advantage" },
-                                    { icon: Heart, title: "Cardio", subtitle: "Peak Output", detail: "VO2 max optimization" },
-                                    { icon: Lightbulb, title: "Form", subtitle: "Precision", detail: "Injury prevention mechanics" }
-                                ]
-                            },
-                            {
-                                title: "Growth Timeline",                                description: "Structured phases for sustainable athletic development.",                                bentoComponent: "timeline",                                heading: "The Transformation Path",                                subheading: "From Baseline to Elite",                                items: [
-                                    { label: "Assessment", detail: "Baseline metrics and goals" },
-                                    { label: "Execution", detail: "Intense training period" },
-                                    { label: "Optimization", detail: "Refining for peak performance" }
-                                ],
-                                completedLabel: "Arsalan Standard Achieved"
-                            }
-                        ]}
-                        textboxLayout="default"
-                        animationType="slide-up"
                         useInvertedBackground={true}
-                        buttons={[
-                            { text: "Start Now", href: "#contact" }
+                        animationType="slide-up"
+                        textboxLayout="default"
+                        features={[
+                            { title: "Core Pillars", description: "Strength, Stability, and Endurance.", bentoComponent: "3d-stack-cards", items: [
+                                { icon: Dumbbell, title: "Strength", subtitle: "Raw Power", detail: "Compound mechanical advantage" },
+                                { icon: Heart, title: "Cardio", subtitle: "Peak Output", detail: "VO2 max optimization" },
+                                { icon: Lightbulb, title: "Form", subtitle: "Precision", detail: "Injury prevention mechanics" }
+                            ]}
                         ]}
                     />
                 </div>
 
                 <div id="testimonials" data-section="testimonials">
-                    <TestimonialCardFifteen
-                        testimonial="Arsalan isn't just a trainer; he's a specialist in human performance. His 1-on-1 attention is unmatched. 500+ other clients can't be wrong—he builds athletes, not just lifters."
-                        rating={5}
-                        author="Elite Client Experience"
-                        avatars={[
-                            { src: "http://img.b2bpic.net/free-photo/handsome-athletic-male-blue-sportswear-holds-dumbbell-dark-vignette-background_613910-1364.jpg?w=400&h=400", alt: "Client" },
-                            { src: "http://img.b2bpic.net/free-photo/serious-sportswoman-with-crossed-arms_1153-942.jpg?w=400&h=400", alt: "Client" },
-                            { src: "http://img.b2bpic.net/free-photo/young-sports-man-happy-expression_1194-1586.jpg?w=400&h=400", alt: "Client" },
-                            { src: "http://img.b2bpic.net/free-photo/cute-young-woman-gym-with-dumbbells_624325-2251.jpg?w=400&h=400", alt: "Client" }
+                    <TestimonialCardSix
+                        title="Client Success Stories"
+                        description="Hear from those who transformed their lives."
+                        animationType="slide-up"
+                        textboxLayout="default"
+                        testimonials={[
+                            { id: "1", name: "Elite Client", handle: "@client1", testimonial: "Arsalan builds athletes, not just lifters. His attention is unmatched.", imageSrc: "http://img.b2bpic.net/free-photo/handsome-athletic-male-blue-sportswear-holds-dumbbell-dark-vignette-background_613910-1364.jpg?w=400&h=400" }
                         ]}
-                        ratingAnimation="slide-up"
-                        avatarsAnimation="slide-up"
-                        useInvertedBackground={true}
                     />
                 </div>
 
                 <div id="contact" data-section="contact">
-                    <ContactSplit
-                        background={{ variant: "plain" }}
+                    <ContactCenter
                         tag="Train with Arsalan"
                         title="Join the 500+ Club"
                         description="Limited training spots available. Secure your place for personalized elite-level coaching today."
-                        useInvertedBackground={false}
-                        imageSrc="http://img.b2bpic.net/free-photo/blurred-bikes_1203-367.jpg?w=800&h=600"
-                        imageAlt="Professional training facility"
-                        mediaPosition="right"
-                        mediaAnimation="slide-up"
-                        tagIcon={Mail}
-                        inputPlaceholder="Your name or email"
-                        buttonText="Secure Spot"
-                        termsText="Serious inquiries only. We focus on results."
                     />
                 </div>
 
                 <div id="footer" data-section="footer">
-                    <FooterCard
+                    <FooterMedia
                         logoText="Arsalan Elite"
-                        copyrightText="© 2025 Arsalan Elite Performance."
-                        socialLinks={[
-                            { icon: Instagram, href: "#", ariaLabel: "Instagram" },
-                            { icon: Twitter, href: "#", ariaLabel: "Twitter" },
-                            { icon: Linkedin, href: "#", ariaLabel: "LinkedIn" },
-                            { icon: Mail, href: "mailto:coach@arsalan.fit", ariaLabel: "Email" }
+                        imageSrc="http://img.b2bpic.net/free-photo/blurred-bikes_1203-367.jpg?w=800&h=600"
+                        columns={[
+                            { title: "Quick Links", items: [
+                                { label: "Home", href: "#" },
+                                { label: "Programs", href: "#services" }
+                            ]}
                         ]}
                     />
                 </div>
