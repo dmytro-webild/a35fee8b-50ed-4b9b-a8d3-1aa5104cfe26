@@ -50,13 +50,13 @@ export default function PersonalTrainerPage() {
                         kpis={[
                             { value: "500+", label: "Total Transformations" },
                             { value: "1", label: "Elite Trainer" },
-                            { value: "100%", label: "Dedicated Support" }
+                            { value: "100%", label: "Dedicated Professional" }
                         ]}
                         enableKpiAnimation={true}
                         tag="Elite Fitness Coach"
                         tagIcon={Award}
-                        imageSrc="http://img.b2bpic.net/free-photo/medium-shot-coach-helping-girl_23-2150363711.jpg"
-                        imageAlt="Arsalan, expert personal trainer"
+                        imageSrc="http://img.b2bpic.net/free-photo/medium-shot-coach-helping-girl_23-2150363711.jpg?w=800&h=600"
+                        imageAlt="Professional Arsalan personal trainer session"
                         imagePosition="right"
                         buttons={[
                             { text: "Start Training", href: "#contact" },
@@ -85,7 +85,7 @@ export default function PersonalTrainerPage() {
                         tagIcon={TrendingUp}
                         metrics={[
                             { id: "1", value: "500+", title: "Successful Clients", description: "Transformations achieved through personalized guidance", icon: Trophy },
-                            { id: "2", value: "1", title: "Lead Coach", description: "Personalized oversight by Arsalan himself", icon: Zap },
+                            { id: "2", value: "1", title: "Lead Coach", description: "Direct, expert 1-on-1 oversight by Arsalan", icon: Zap },
                             { id: "3", value: "100%", title: "Goal Clarity", description: "Precise, target-oriented athletic programming", icon: Star },
                         ]}
                         gridVariant="uniform-all-items-equal"
@@ -103,13 +103,13 @@ export default function PersonalTrainerPage() {
                         tagIcon={Dumbbell}
                         features={[
                             {
-                                title: "1-on-1 Elite Coaching",                                description: "Direct mentorship from Arsalan. Focus on perfect technique, aggressive progress tracking, and constant adjustments to keep you hitting new PRs.",                                imageSrc: "http://img.b2bpic.net/free-photo/high-angle-woman-helping-fit-man-gym_23-2149740141.jpg",                                imageAlt: "1 on 1 coaching"
+                                title: "1-on-1 Elite Coaching",                                description: "Direct mentorship from Arsalan. Focus on perfect technique, aggressive progress tracking, and constant adjustments to keep you hitting new PRs.",                                imageSrc: "http://img.b2bpic.net/free-photo/high-angle-woman-helping-fit-man-gym_23-2149740141.jpg?w=800&h=600",                                imageAlt: "1 on 1 coaching session"
                             },
                             {
-                                title: "Elite Conditioning",                                description: "High-intensity programming designed to maximize output, improve recovery cycles, and optimize your cardiovascular and muscular endurance.",                                imageSrc: "http://img.b2bpic.net/free-photo/crossfit-exercise-performed-by-strong-woman-with-rope_1098-18892.jpg",                                imageAlt: "Conditioning workout"
+                                title: "Elite Conditioning",                                description: "High-intensity programming designed to maximize output, improve recovery cycles, and optimize your cardiovascular and muscular endurance.",                                imageSrc: "http://img.b2bpic.net/free-photo/crossfit-exercise-performed-by-strong-woman-with-rope_1098-18892.jpg?w=800&h=600",                                imageAlt: "Conditioning workout session"
                             },
                             {
-                                title: "Performance Nutrition",                                description: "Fuel your training with evidence-based macro and micro-nutrient planning designed specifically to complement your training phase.",                                imageSrc: "http://img.b2bpic.net/free-photo/front-view-women-with-delicious-food_23-2149894894.jpg",                                imageAlt: "Performance nutrition plan"
+                                title: "Performance Nutrition",                                description: "Fuel your training with evidence-based macro and micro-nutrient planning designed specifically to complement your training phase.",                                imageSrc: "http://img.b2bpic.net/free-photo/front-view-women-with-delicious-food_23-2149894894.jpg?w=800&h=600",                                imageAlt: "Performance nutrition plan"
                             }
                         ]}
                         textboxLayout="default"
@@ -162,10 +162,10 @@ export default function PersonalTrainerPage() {
                         rating={5}
                         author="Elite Client Experience"
                         avatars={[
-                            { src: "http://img.b2bpic.net/free-photo/handsome-athletic-male-blue-sportswear-holds-dumbbell-dark-vignette-background_613910-1364.jpg", alt: "Client" },
-                            { src: "http://img.b2bpic.net/free-photo/serious-sportswoman-with-crossed-arms_1153-942.jpg", alt: "Client" },
-                            { src: "http://img.b2bpic.net/free-photo/young-sports-man-happy-expression_1194-1586.jpg", alt: "Client" },
-                            { src: "http://img.b2bpic.net/free-photo/cute-young-woman-gym-with-dumbbells_624325-2251.jpg", alt: "Client" }
+                            { src: "http://img.b2bpic.net/free-photo/handsome-athletic-male-blue-sportswear-holds-dumbbell-dark-vignette-background_613910-1364.jpg?w=400&h=400", alt: "Client" },
+                            { src: "http://img.b2bpic.net/free-photo/serious-sportswoman-with-crossed-arms_1153-942.jpg?w=400&h=400", alt: "Client" },
+                            { src: "http://img.b2bpic.net/free-photo/young-sports-man-happy-expression_1194-1586.jpg?w=400&h=400", alt: "Client" },
+                            { src: "http://img.b2bpic.net/free-photo/cute-young-woman-gym-with-dumbbells_624325-2251.jpg?w=400&h=400", alt: "Client" }
                         ]}
                         ratingAnimation="slide-up"
                         avatarsAnimation="slide-up"
@@ -180,8 +180,8 @@ export default function PersonalTrainerPage() {
                         title="Join the 500+ Club"
                         description="Limited training spots available. Secure your place for personalized elite-level coaching today."
                         useInvertedBackground={false}
-                        imageSrc="http://img.b2bpic.net/free-photo/blurred-bikes_1203-367.jpg"
-                        imageAlt="Professional training environment"
+                        imageSrc="http://img.b2bpic.net/free-photo/blurred-bikes_1203-367.jpg?w=800&h=600"
+                        imageAlt="Professional training facility"
                         mediaPosition="right"
                         mediaAnimation="slide-up"
                         tagIcon={Mail}
